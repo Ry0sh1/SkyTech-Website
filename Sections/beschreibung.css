@@ -1,0 +1,18 @@
+.beschreibung{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#8FAADC, #203864);
+}
+.beschreibung p {
+    margin: 0 28vw 0 0;
+    width: 40vw;
+    color: white;
+    font-family: Calibri, serif;
+    font-size: 2rem;
+}

@@ -1,9 +1,0 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.overlay{
-    width: 100vh;
-    height: 100vh;
-    background: linear-gradient(#fff, #8FAADC);
-}

@@ -1,0 +1,51 @@
+.welcome{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    background: linear-gradient(#fff, #8FAADC);
+}
+.brand, .motto{
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri, serif;
+}
+.brand{
+    background-color: #fff;
+    color: #8FAADC;
+    height: 10vw;
+    font-size: 6vw;
+    font-weight: bold;
+}
+.motto{
+    background-color: #8FAADC;
+    color: #fff;
+    font-size: 3vw;
+    height: 6vw;
+}
+.readMore{
+    background-color: #fff;
+    color: #8FAADC;
+    border: none;
+    height: 6vw;
+    width: 16vw;
+    font-size: 2vw;
+    font-family: Calibri, serif;
+    cursor: pointer;
+    transition: width 0.15s, height 0.15s, font-weight 0.15s;
+}
+.readMore:hover{
+    font-weight: bold;
+    height: 7vw;
+    width: 17vw;
+}

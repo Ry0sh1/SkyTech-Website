@@ -1,0 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+p, button, h2, h3, h1, ul, li{
+    font-family: Calibri, serif;
+}

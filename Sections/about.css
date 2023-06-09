@@ -1,0 +1,20 @@
+.about{
+    background: linear-gradient(#203864, #152543);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h2{
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.about p{
+    color: white;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 40vw;
+}

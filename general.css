@@ -1,7 +1,17 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 p, button, h2, h3, h1, ul, li{
     font-family: Calibri, serif;
+}
+body::-webkit-scrollbar{
+    width: 0.5vw;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+body::-webkit-scrollbar-track{
+    background-color: #203864;
 }

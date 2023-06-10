@@ -17,6 +17,11 @@
     justify-content: center;
     gap: 50px;
 }
+@media screen and (max-width: 1400px){
+    .beschreibung p {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1200px){
     .beschreibung p {
         font-size: 18px;

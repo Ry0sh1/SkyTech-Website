@@ -14,7 +14,20 @@
     color: white;
     font-size: 1.6rem;
     line-height: 2rem;
-    width: 60%;
+    width: 36%;
+}
+@media screen and (max-width: 1400px) {
+    .contact{
+        margin-top: 100px;
+    }
+    .contact h2{
+        font-size: 24px;
+    }
+    .contact p{
+        font-size: 20px;
+        line-height: 24px;
+        width: 52%;
+    }
 }
 @media screen and (max-width: 1200px) {
     .contact{
@@ -26,6 +39,7 @@
     .contact p{
         font-size: 18px;
         line-height: 22px;
+        width: 60%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -38,5 +52,6 @@
     .contact p{
         font-size: 12px;
         line-height: 16px;
+        width: 60%;
     }
 }

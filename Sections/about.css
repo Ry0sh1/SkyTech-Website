@@ -13,7 +13,17 @@
     color: white;
     font-size: 1.6rem;
     line-height: 2rem;
-    width: 60%;
+    width: 36%;
+}
+@media screen and (max-width: 1400px){
+    .about h2{
+        font-size: 24px;
+    }
+    .about p{
+        font-size: 20px;
+        line-height: 24px;
+        width: 52%;
+    }
 }
 @media screen and (max-width: 1200px) {
     .about h2{
@@ -22,6 +32,7 @@
     .about p{
         font-size: 18px;
         line-height: 22px;
+        width: 60%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -31,5 +42,6 @@
     .about p{
         font-size: 12px;
         line-height: 16px;
+        width: 60%;
     }
 }

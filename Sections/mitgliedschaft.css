@@ -5,7 +5,7 @@
     justify-content: center;
 }
 .abo-content{
-    width: 72%;
+    width: 64%;
 }
 .abo-content h2{
     text-align: left;
@@ -50,6 +50,23 @@
     text-align: center;
     width: 60%;
 }
+@media screen and (max-width: 1400px){
+    .vorteile{
+        margin-top: 56px;
+    }
+    .abo-content h2{
+        font-size: 24px;
+    }
+    .abo-content p{
+        font-size: 20px;
+    }
+    .vorteile li h3{
+        font-size: 22px;
+    }
+    .vorteile li p{
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1200px){
     .vorteile{
         grid-template-columns: 1fr 1fr;
@@ -70,6 +87,9 @@
     }
 }
 @media screen and (max-width: 600px){
+    .abo-content{
+        width: 72%;
+    }
     .vorteile{
         grid-template-columns: 1fr 1fr;
         row-gap: 60px;

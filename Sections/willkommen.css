@@ -45,6 +45,16 @@
     font-weight: bold;
     padding: 22px 26px;
 }
+@media screen and (max-width: 1400px) {
+    .readMore{
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+    .readMore:hover{
+        font-weight: bold;
+        padding: 20px 28px;
+    }
+}
 @media screen and (max-width: 1200px) {
     .readMore{
         padding: 14px 22px;

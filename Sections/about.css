@@ -13,5 +13,23 @@
     color: white;
     font-size: 1.6rem;
     line-height: 2rem;
-    width: 40vw;
+    width: 60%;
+}
+@media screen and (max-width: 1200px) {
+    .about h2{
+        font-size: 22px;
+    }
+    .about p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about h2{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 12px;
+        line-height: 16px;
+    }
 }

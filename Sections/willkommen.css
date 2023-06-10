@@ -35,7 +35,7 @@
     color: #8FAADC;
     border: none;
     padding: 18px 22px;
-    font-size: 1em;
+    font-size: 2em;
     font-family: Calibri, serif;
     cursor: pointer;
     transition: width 0.15s, height 0.15s, font-weight 0.15s;
@@ -45,3 +45,24 @@
     font-weight: bold;
     padding: 22px 26px;
 }
+@media screen and (max-width: 1200px) {
+    .readMore{
+        padding: 14px 22px;
+        font-size: 18px;
+    }
+    .readMore:hover{
+        font-weight: bold;
+        padding: 18px 26px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .readMore{
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .readMore:hover{
+        font-weight: bold;
+        padding: 12px 20px;
+    }
+}
+

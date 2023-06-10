@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+.abo-content{
+    width: 72%;
+}
 .abo-content h2{
     text-align: left;
     color: white;
@@ -21,28 +24,67 @@
     align-items: center;
     justify-content: space-between;
 }
-.abo-content ul{
+.vorteile{
     margin-top: 60px;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 72vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
     padding: 0;
 }
-.abo-content li{
+.vorteile li{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.abo-content ul h3{
+.vorteile li h3{
     color: white;
     font-size: 2.2rem;
     text-decoration: underline;
     text-align: center;
 }
-.abo-content ul p{
+.vorteile li p{
     font-size: 1.6rem;
     margin: 0;
     text-align: center;
-    width: 16vw;
+    width: 60%;
+}
+@media screen and (max-width: 1200px){
+    .vorteile{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 60px;
+        margin-top: 56px;
+    }
+    .abo-content h2{
+        font-size: 22px;
+    }
+    .abo-content p{
+        font-size: 18px;
+    }
+    .vorteile li h3{
+        font-size: 20px;
+    }
+    .vorteile li p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .vorteile{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 60px;
+        margin-top: 32px;
+    }
+    .abo-content h2{
+        font-size: 16px;
+    }
+    .abo-content p{
+        font-size: 12px;
+    }
+    .vorteile li h3{
+        font-size: 14px;
+    }
+    .vorteile li p{
+        font-size: 12px;
+    }
 }

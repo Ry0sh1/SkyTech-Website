@@ -1,15 +1,9 @@
 .welcome{
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4vh;
-    background: linear-gradient(#fff, #809FD6);
 }
 .brand, .motto{
     padding: 0;
@@ -34,18 +28,19 @@
     height: 6vw;
 }
 .readMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     color: #8FAADC;
     border: none;
-    height: 6vw;
-    width: 16vw;
-    font-size: 2vw;
+    padding: 18px 22px;
+    font-size: 1em;
     font-family: Calibri, serif;
     cursor: pointer;
     transition: width 0.15s, height 0.15s, font-weight 0.15s;
 }
 .readMore:hover{
     font-weight: bold;
-    height: 7vw;
-    width: 17vw;
+    padding: 22px 26px;
 }

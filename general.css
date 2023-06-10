@@ -15,3 +15,29 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
     background-color: #203864;
 }
+.first-section, .second-section, .third-section, .fourth-section{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-section{
+    background: linear-gradient(#fff, #809FD6);
+}
+.second-section{
+    background: linear-gradient(#809FD6,#547DC8);
+}
+.third-section{
+    background: linear-gradient(#547DC8, #203864);
+}
+.fourth-section{
+    background: linear-gradient(#203864, #152543);
+}
+.fifth-section{
+    background: linear-gradient(#152543, #000);
+}

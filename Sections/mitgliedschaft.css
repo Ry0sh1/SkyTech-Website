@@ -1,10 +1,4 @@
 .abo{
-    padding: 0;
-    border: none;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(#547DC8, #203864);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +16,18 @@
     font-size: 1.8rem;
     width: 44vw;
 }
-.abo-content button{
+.mitgliedWerden{
     width: 12vw;
     padding: 16px;
     border-radius: 50px;
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
+}
+.abo-content-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .abo-content ul{
     margin-top: 60px;

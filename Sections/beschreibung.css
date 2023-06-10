@@ -1,18 +1,19 @@
 .beschreibung{
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#809FD6,#547DC8);
 }
 .beschreibung p {
-    margin: 0 28vw 0 0;
+    margin: 0 8vw 0 0;
     width: 40vw;
     color: white;
     font-family: Calibri, serif;
     font-size: 2rem;
+}
+.beschreibung-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }

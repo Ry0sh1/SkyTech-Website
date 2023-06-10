@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -48,8 +51,10 @@ body::-webkit-scrollbar-track{
 }
 .second-section{
     background: linear-gradient(#809FD6,#547DC8);
+    height: 60vh;
 }
 .third-section{
+    height: 100vh;
     background: linear-gradient(#547DC8, #203864);
 }
 .fourth-section{

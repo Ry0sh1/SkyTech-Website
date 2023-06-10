@@ -39,6 +39,7 @@
     font-family: Calibri, serif;
     cursor: pointer;
     transition: width 0.15s, height 0.15s, font-weight 0.15s;
+    text-decoration: none;
 }
 .readMore:hover{
     font-weight: bold;

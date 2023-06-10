@@ -15,7 +15,24 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
     background-color: #203864;
 }
-.first-section, .second-section, .third-section, .fourth-section{
+.button-look{
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: white;
+    color: #2653b2;
+    transition: box-shadow 0.05s, background-color 0.05s, color 0.05s;
+}
+.button-look:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.button-look:active{
+    background-color: #2653b2;
+    color: white;
+}
+.first-section, .second-section, .third-section, .fourth-section, .fifth-section{
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -40,4 +57,6 @@ body::-webkit-scrollbar-track{
 }
 .fifth-section{
     background: linear-gradient(#152543, #000);
+    height: 20vh;
+    border-top: black solid 1px;
 }

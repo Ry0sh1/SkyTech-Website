@@ -16,14 +16,6 @@
     font-size: 1.8rem;
     width: 44vw;
 }
-.mitgliedWerden{
-    width: 12vw;
-    padding: 16px;
-    border-radius: 50px;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-}
 .abo-content-top{
     display: flex;
     align-items: center;

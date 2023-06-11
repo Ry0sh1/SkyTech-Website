@@ -22,8 +22,9 @@
       </div>
     </section>
     <section class="second-section">
-      <div id="beschreibung" class="beschreibung">
-       <p>
+      <div id="beschreibung"></div>
+      <div class="beschreibung">
+       <p class="hidden">
          Haben sie ein Problem mit Ihrem Computer, Router, Drucker oder
          sonstigen Geräten, sei es mit der Software oder mit der Hardware
          können wir euch helfen!
@@ -34,7 +35,7 @@
          sie über einen längeren Zeitraum vielerlei Vergütungen bekommen!
          Mitgliedschaft ansehen
        </p>
-        <div class="beschreibung-button">
+        <div class="beschreibung-button hidden">
           <button class="button-look">Termin buchen</button>
         </div>
       </div>
@@ -44,44 +45,44 @@
         <div class="abo-content">
           <div class="abo-content-top">
             <div>
-              <h2>Mitgliedschaft</h2>
-              <p>
+              <h2 class="hidden">Mitgliedschaft</h2>
+              <p class="hidden">
                 Wenn Sie eine Mitgliedschaft bei uns abschließen erhalten sie
                 Vielerlei Vergünstigungen, Boni und weitere Vorteile!
               </p>
-              <p>
+              <p  class="hidden">
                 Hier eine kleine Übersicht:
               </p>
             </div>
-            <div>
+            <div class="hidden">
               <button class="button-look">Mitglied werden</button>
             </div>
           </div>
           <div>
             <ul class="vorteile">
               <li>
-                <h3>Beratung</h3>
-                <p>
+                <h3 class="hidden">Beratung</h3>
+                <p class="hidden">
                   Als Mitglied erhalten Sie jederzeit erstklassige und
                   kostenlose Beratung!
                 </p>
               </li>
               <li>
-                <h3>Kostenloser Support</h3>
-                <p>
+                <h3 class="hidden">Kostenloser Support</h3>
+                <p class="hidden">
                   Sie erhalten jederzeit kostenlosen Support als Mitglied
                 </p>
               </li>
               <li>
-                <h3>Vorrang</h3>
-                <p>
+                <h3 class="hidden">Vorrang</h3>
+                <p class="hidden">
                   Sie haben als Mitglied an höher ausgelasteten Tagen
                   Vorrang und brauchen nicht lange zu warten!
                 </p>
               </li>
               <li>
-                <h3>Comfort</h3>
-                <p>
+                <h3 class="hidden">Comfort</h3>
+                <p class="hidden">
                   Ganz einfach anrufen und wir kommen persönlich zu Ihnen!
                 </p>
               </li>
@@ -92,8 +93,8 @@
     </section>
     <section class="fourth-section">
       <div class="about">
-        <h2>About Me</h2>
-        <p>
+        <h2 class="hidden">About Me</h2>
+        <p class="hidden">
           Ich bin ein in der Universität Oldenburg eingeschriebener Informatik
           Student und arbeite schon mein Leben lang mit technischen Geräten.
           Ich arbeite seit einem halben Jahr bei Cewe Color im IT-Support und
@@ -103,14 +104,14 @@
         </p>
       </div>
       <div class="contact">
-        <h2>Kontakt</h2>
-        <p>
+        <h2 class="hidden">Kontakt</h2>
+        <p class="hidden">
           Wir sind telefonisch unter der Nummer +49 176 82404836 erreichbar.
           Über unsere E-Mail SkyTech.hude@gmail.com sind wir ebenfalls erreichbar.
           Ansonsten können Sie auch gerne einen Ausflug zu unserem schönen Hof
           am Barkemeyersweg 11, 27798 Hude machen. Wir freuen uns auf Sie!
         </p>
-        <p>
+        <p class="hidden">
           Andernfalls können Sie auch hier ein Kontaktformular ausfüllen.
         </p>
         <button class="button-look">Kontakt</button>
@@ -121,5 +122,20 @@
       
       </footer>
     </section>
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting){
+              entry.target.classList.add('show');
+            }
+            else {
+                entry.target.classList.remove('show');
+            }
+        })
+    })
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
   </body>
 </html>

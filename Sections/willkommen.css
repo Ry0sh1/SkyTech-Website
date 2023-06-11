@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 4vh;
+
 }
 .brand, .motto{
     padding: 0;
@@ -15,6 +16,8 @@
     font-family: Calibri, serif;
 }
 .brand{
+    position: sticky;
+    top: 0;
     background-color: #fff;
     color: #8FAADC;
     height: 10vw;

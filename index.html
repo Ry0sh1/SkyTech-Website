@@ -114,7 +114,7 @@
         <p class="hidden">
           Andernfalls können Sie auch hier ein Kontaktformular ausfüllen.
         </p>
-        <button class="button-look">Kontakt</button>
+        <button class="button-look hidden">Kontakt</button>
       </div>
     </section>
     <section class="fifth-section">
@@ -123,19 +123,21 @@
       </footer>
     </section>
   <script>
-    const observer = new IntersectionObserver((entries)=>{
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting){
-              entry.target.classList.add('show');
-            }
-            else {
-                entry.target.classList.remove('show');
-            }
-        })
-    })
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
+      const objects = document.querySelectorAll(".hidden");
+      
+      const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              console.log(entry);
+              entry.target.classList.toggle("show", entry.isIntersecting);
+          })
+        },{
+              threshold:1,
+          }
+      )
+      objects.forEach(object => {
+          observer.observe(object);
+      });
   </script>
   </body>
 </html>
